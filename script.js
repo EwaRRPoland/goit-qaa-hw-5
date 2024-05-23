@@ -9,25 +9,24 @@
 //może być też związane z lokalnym kontekstem - funkcje strzałkowe
 
 // //1a jestesmy w obiekcie ola
-// const ola = {
+ const ola = {
 //     //własciwość username obiektu ola
-//     username: "Aleksandra Pardwa",
+     username: "Aleksandra Pardwa",
 //     //metoda obiektu ola, która pozawala wyświetlić w konsoli podpowiedź kim jest własciciel , odwołując się do this tego obiektu
-//     showName() {
-//       console.log("Ola to :", this.username);
-//     },
-//   };
+     showName() {
+      console.log("Ola to :", this.username);     },
+   };
 //   //wywołanie metody
-// ola.showName();
+ ola.showName();
 
 
 //   //1b jesteśmy w obiekcie Window/ w node.js - global
-// function fooGlobal() {
+ function fooGlobal() {
 //     //funkcja globalna, która pozwala na sprawdzenie w jakim obiekcie aktualnie jesteśmy - info w konsoli
-//     console.log(this);
-// }
+     console.log(this);
+ }
 // //wywołanie funkcji globalnej  jest metodą obiektu Window
-// fooGlobal();
+ fooGlobal();
 
 
 //zad2
@@ -39,16 +38,16 @@
 //Przetestuj swój obiekt, wywołując metodę showName() i sprawdzając,
 //czy poprawnie zapisuje właściwość username w konsoli.
 
-// const person = {
+ const person = {
 //     //własciwość username obiektu person
-//     username: "Maciej",
+     username: "Maciej",
 //     //metoda wyświetlająca w konsoli username obiektu person
-//     showName() {
-//         return console.log(this.username);
-//     }
-// }
+     showName() {
+         return console.log(this.username);
+     }
+ }
 // //wywołanie metody w obiekcie
-// person.showName();
+ person.showName();
 
 //zad3
 //Rozszerz poprzedni przykład, aby utworzyć obiekt JavaScript reprezentujący półkę na książki.
@@ -59,23 +58,23 @@
 //Zaimplementuj metody obiektu półki na książki, używając słowa kluczowego this, aby odnosić się do samego obiektu.
 //Przetestuj swój obiekt, dodając kilku autorów do półki na książki, a następnie pobierając listę autorów za pomocą metody getAuthors().
 
-// const bookShelf = {
+ const bookShelf = {
 //     //własciość tablica do przechowywania autorów
-//     authors: [],
+    authors: [],
 //     //metoda obiektu bookShelf służąca do wyświetlania tablicy autorów this - tego obiektu
-//     getAuthors() {
-//         return this.authors;
-//     },
+    getAuthors() {
+       return this.authors;
+     },
 //     //metoda obiektu BookShelf słuząca do popbierania autorów i dodająca do tablicy autorów this tego obiektu
-//     addAuthor(authorName) {
-//         return this.authors.push(authorName);
-//     },
-// }
+    addAuthor(authorName) {
+        return this.authors.push(authorName);
+     },
+ }
 // //dodaję kolejno 4 autorów do obiektu bookShelf korzystając z wenetrznej metody tego obiektu
-// bookShelf.addAuthor("Robert Resnik");
-// bookShelf.addAuthor("David Halliday");
-// bookShelf.addAuthor("Edward Derringh");
-// bookShelf.addAuthor("John Wiley");
+ bookShelf.addAuthor("Robert Resnik");
+ bookShelf.addAuthor("David Halliday");
+ bookShelf.addAuthor("Edward Derringh");
+ bookShelf.addAuthor("John Wiley");
 // //wywołuję w konsoli tablicę autorów obiektu bookShelf korzystając z wenętrznej metody tego obiektu
-// console.log(bookShelf.getAuthors());
+ console.log(bookShelf.getAuthors());
 
